@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --card-bg: #141414;
+  --card-border: #262626;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --muted: #737373;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--card-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+
+/* Prose/Markdown preview styles */
+.prose {
+  line-height: 1.8;
+}
+
+.prose h1 {
+  @apply text-2xl font-bold mb-6 mt-8 pb-2 border-b border-slate-700;
+}
+
+.prose h2 {
+  @apply text-xl font-semibold mb-4 mt-8 text-emerald-400;
+}
+
+.prose h3 {
+  @apply text-lg font-medium mb-3 mt-6 text-slate-200;
+}
+
+.prose p {
+  @apply mb-4 leading-relaxed text-slate-300;
+}
+
+.prose ul {
+  @apply list-disc ml-6 mb-4 space-y-2;
+}
+
+.prose ol {
+  @apply list-decimal ml-6 mb-4 space-y-2;
+}
+
+.prose li {
+  @apply text-slate-300 leading-relaxed;
+}
+
+.prose hr {
+  @apply my-8 border-slate-700;
+}
+
+.prose strong {
+  @apply font-semibold text-white;
+}
+
+.prose em {
+  @apply italic text-slate-400;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-slate-600 pl-4 my-4 italic text-slate-400;
+}
+
+.prose a {
+  @apply text-emerald-400 hover:text-emerald-300 underline;
+}
+
+/* Signature block styling */
+.prose hr + p {
+  @apply mt-4;
+}
+
