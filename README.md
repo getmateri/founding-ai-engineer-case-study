@@ -42,4 +42,4 @@ materi-case-study/
 2. Filled-in `ARCHITECTURE.md` and `PROMPTS.md`
 3. Output artifacts in `out/` from a successful run
 
-See `ASSIGNMENT.md` for full requirements.
+See (https://www.notion.so/Founding-AI-Engineer-Case-Study-2bfeefa4b8e680e28e17ff0630827603) for full requirements.
