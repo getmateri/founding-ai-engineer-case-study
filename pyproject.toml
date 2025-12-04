@@ -1,0 +1,20 @@
+[project]
+name = "founding-ai-engineer-case-study"
+version = "0.1.0"
+description = "AI-native document generation agent for term sheets"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.109.0",
+    "uvicorn>=0.27.0",
+    "openai>=1.12.0",
+    "openpyxl>=3.1.2",
+    "pydantic>=2.6.0",
+    "python-multipart>=0.0.9",
+    "python-dotenv>=1.0.0",
+    "python-docx>=1.1.0",
+    "pypdf>=4.0.0",
+]
+
+[project.scripts]
+agent = "src.main:main"
